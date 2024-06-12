@@ -1,0 +1,136 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+
+.secao-principal,
+.secao-sobre,
+.secao-servicos-prestados {
+  background: #fff;
+  border: #0D214F 4px solid;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 8px;
+}
+
+.secao-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.secao-principal .texto-principal {
+  width: 60%;
+}
+
+.botoes-principais {
+  display: flex;
+}
+
+button {
+  background-color: #0D214F;
+  color: #FFFFFF;
+  border: none;
+  width: 150px;
+  height: 40px;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.texto-sobre,
+.texto-servicos-prestados {
+  width: 70%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.conteudo-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.faq {
+  background-color: #0D214F;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  margin: 4px;
+  border-radius: 8px;
+  font-size: 12px;
+  height: max-content;
+}
+
+.faq .faq-pergunta {
+  display: grid;
+  grid-template-columns: 95% 5%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq .faq-pergunta .flecha-para-baixo {
+  font-size: 20px;
+}
+
+.faq hr,
+.faq p {
+  display: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #0D214F;
+}
+
+p {
+  text-indent: 16px;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer-contato {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.secao {
+  background: #fff;
+  border: #0D214F 4px solid;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  width: 100%;
+}
+
+
+
+input {
+  width: 90%;
+  height: 20px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: #0D214F 2px solid;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: #0D214F 2px solid;
+}

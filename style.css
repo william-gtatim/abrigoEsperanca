@@ -1,0 +1,129 @@
+html {
+  height: 100%;
+  width: 100%;
+  background: #ddd;
+}
+
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' -25,
+    'opsz' 34
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+}
+
+.acordeon .titulo {
+  font-size:18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+
+.acordeon .icone {
+  transition: transform 0.3s ease;
+}
+
+.girar-icone {
+   transform: rotate(180deg);
+}
+
+.acordeon-titulo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.acordeon {
+  border: solid 2px #0D214F;
+  border-radius: 8px;
+  padding:20px;
+  background-color: #fff;
+ 
+}
+
+.acordeon-corpo {
+  display: none;
+}
+
+/* Estilos para o container hero */
+.hero {
+  display: flexbox; /* Usa flexbox para layout flexível */
+  align-items: center; /* Alinha os itens verticalmente */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://img.freepik.com/fotos-gratis/pessoas-que-estao-com-coracao-de-borracha_1150-18576.jpg); /* Imagem de fundo com sobreposição acinzentada */
+  border: solid 2px #0D214F; /* Borda */
+  padding: 80px 50px; /* Espaçamento interno com padding-top aumentado */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 16px; /* Margem inferior */
+  gap: 16px; /* Espaçamento entre os elementos */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o container */
+  background-position: center; /* Centraliza a imagem no container */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+/* Estilos para o hero do texto */
+.text-hero {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+    padding: 0 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    position: relative; /* Posição relativa */
+    z-index: 0; /* z-index para garantir que o texto esteja na frente da imagem de fundo */
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para o título */
+.text-hero h1 {
+    margin: 0; /* Remove margem padrão */
+    font-size: 24px; /* Tamanho do título */
+    color: #fff; /* Cor do texto */
+    animation: slideInFromTop 1s ease-in-out; /* Animação de entrada */
+    text-align: center; /* Alinhamento central do texto */
+    z-index: 0; /* z-index para garantir que o título esteja na frente da imagem de fundo */
+}
+
+/* Estilos para o parágrafo */
+.text-hero p {
+    margin-top: 10px; /* Margem superior */
+    font-size: 16px; /* Tamanho do texto */
+    color: #fff; /* Cor do texto */
+    animation: slideInFromTop 1s ease-in-out; /* Animação de entrada */
+}
+
+/* Regras de mídia para dispositivos com largura menor que 768px (como celulares) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Altera a direção do flexbox para empilhar os elementos verticalmente */
+        padding: 30px; /* Reduz o espaçamento interno */
+    }
+
+    .text-hero {
+        text-align: center; /* Alinhamento do texto centralizado */
+    }
+
+    .text-hero h1 {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+
+    .text-hero p {
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+}
